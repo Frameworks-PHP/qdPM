@@ -1258,6 +1258,7 @@ class app
                    'projects_reports',
                    'projects_comments',
                    'projects',
+                   'pages',
                    'attachments',
                    'events',                                      
                    'departments',

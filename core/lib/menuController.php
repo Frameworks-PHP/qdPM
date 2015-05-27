@@ -356,6 +356,17 @@ class menuController
                    ));
   }
   
+  public function buildPagesMenu()
+  {
+     return array('title'=>__('Pages'),
+                  'class'=>'fa-file',
+                  'url'=>'pages/index',
+                 'submenu'=>array(                    
+                    array('title'=>__('View All'),'url'=>'pages/index'),                                                                                
+                   ));
+  }
+
+
   public function buildMenu()
   {
     if(!$this->sf_user->isAuthenticated())
@@ -374,7 +385,8 @@ class menuController
     }
     
     $m[] = array('title'=>__('Dashboard'),'url'=>'dashboard/index','class'=>'fa-home');
-            
+
+
     if($this->access['projects']['view'] or $this->access['projects']['view_own']) 
     {
       $m[] = $this->buildProjectsMenu();
@@ -408,6 +420,8 @@ class menuController
       $m[] = $this->buildToolsMenu();
       $m[] = $this->buildUpgradeToExtendedMenu();
     }
+
+    $m[] = $this->buildPagesMenu();
                  
     return $m;
   }

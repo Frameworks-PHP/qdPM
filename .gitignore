@@ -1,0 +1,4 @@
+databases.yml
+core/cache/
+core/log/
+backups/

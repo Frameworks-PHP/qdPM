@@ -2923,7 +2923,15 @@
       <trans-unit id="837">
         <source>Please wait. Files are loading.</source>
         <target>Por favor espere. Los archivos se están cargando.</target>
-      </trans-unit>      
+      </trans-unit>
+      <trans-unit id="838">
+        <source>Pages</source>
+        <target>Páginas</target>
+      </trans-unit> 
+      <trans-unit id="838">
+        <source>Add Pages</source>
+        <target>Agregar Páginas</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
